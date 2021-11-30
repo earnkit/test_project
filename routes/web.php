@@ -49,6 +49,10 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function(){
 
 });
 
+Route::get('/', function () {
+    return view('welcome');
+});
+
 
 
 
